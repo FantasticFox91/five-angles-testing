@@ -1,0 +1,36 @@
+.search {
+  display: flex;
+}
+
+.search__input {
+  display: none;
+  width: 250px;
+  border: none;
+  font: inherit;
+  border-bottom: 1px solid @basic-grey;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
+}
+
+.search__button {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: transparent;
+
+  @media (min-width: @desktop-width) {
+    margin-right: 20px;
+  }
+}
+
+.search__icon {
+  @media (min-width: @desktop-width) {
+    width: 25px;
+    height: 25px;
+  }
+}

@@ -1,0 +1,95 @@
+.form {
+  padding-bottom: 40px;
+}
+
+.form__fieldset {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 18px;
+  border: none;
+  width: 100%;
+}
+
+.form__fieldset--textarea {
+  margin-bottom: 11px;
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 13px;
+  }
+}
+
+.form__label {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  font-size: 12px;
+  line-height: 14px;
+  color: @basic-grey;
+  z-index: -1;
+  transition: @basic-animation;
+}
+
+.form__input:not(:placeholder-shown) + .form__label {
+  top: 0;
+  z-index: 2;
+}
+
+.form__input {
+  width: 100%;
+  padding: 20px 24px 7px 0;
+  font: inherit;
+  border: none;
+  border-bottom: 1px solid @basic-grey;
+}
+
+.form__input--textarea {
+  resize: none;
+  line-height: 19px;
+
+  @media (min-width: @desktop-width) {
+    height: 46px;
+  }
+}
+
+.form__input::placeholder {
+  color: @basic-grey;
+}
+
+.form__button {
+  width: 100%;
+  padding: 18px 0 17px;
+  font-size: 20px;
+  line-height: 23px;
+  font-weight: 700;
+  border: 1px solid @basic-black;
+  background-color: transparent;
+
+  @media (min-width: @desktop-width) {
+    padding-top: 23px;
+    padding-bottom: 22px;
+  }
+}
+
+.form__columns {
+  @media (min-width: @desktop-width) {
+    display: flex;
+    gap: 35px;
+  }
+}
+
+.map {
+  margin-bottom: 21px;
+
+  @media (min-width: @desktop-width) {
+    grid-column: 2 / 3;
+    grid-row: 1 / 10;
+  }
+}
+
+.map__image {
+  @media (min-width: @desktop-width) {
+    width: 555px;
+    height: 700px;
+  }
+}

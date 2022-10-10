@@ -1,0 +1,29 @@
+.breadcrumbs__list {
+  display: flex;
+}
+
+.breadcrumbs__item:not(:last-child) {
+  position: relative;
+  padding-right: 26px;
+
+  &::after {
+    .pseudo();
+
+    width: 2px;
+    height: 13px;
+    top: 3px;
+    right: 12px;
+    background-color: @basic-grey-light;
+    transform: rotate(18deg);
+  }
+}
+
+.breadcrumbs__link {
+  font-size: 18px;
+  text-decoration: none;
+  color: @basic-grey;
+}
+
+.breadcrumbs__link--active {
+  color: @basic-black;
+}

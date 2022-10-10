@@ -1,0 +1,27 @@
+.navigation {
+  position: relative;
+  display: flex;
+  justify-content: center;
+
+  @media (min-width: @desktop-width) {
+    justify-content: space-between;
+  }
+}
+
+.navigation__list {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    padding-top: 32px;
+    gap: 30px;
+  }
+}
+
+.navigation__link {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: @basic-grey;
+  font-weight: 700;
+  letter-spacing: 0.09em;
+}

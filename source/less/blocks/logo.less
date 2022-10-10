@@ -1,0 +1,19 @@
+.logo {
+  margin-top: -25px;
+  margin-bottom: 37px;
+  display: flex;
+  justify-content: center;
+
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    margin-top: 0;
+    left: calc(50% - 80px);
+  }
+}
+
+.logo__image {
+  @media (min-width: @desktop-width) {
+    width: 160px;
+    height: 50px;
+  }
+}

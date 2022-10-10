@@ -1,0 +1,131 @@
+.selected-items {
+  margin-top: 40px;
+
+  @media (min-width: @desktop-width) {
+    margin-top: 52px;
+  }
+}
+
+.selected-items__heading {
+  margin: 0;
+  margin-bottom: 32px;
+  font-size: 26px;
+  line-height: 30px;
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 30px;
+    font-size: 28px;
+    line-height: 32px;
+  }
+}
+
+.selected-items__list {
+  display: flex;
+  margin-bottom: 24px;
+  flex-direction: column;
+  gap: 16px;
+
+  @media (min-width: @desktop-width) {
+    margin-left: -1px;
+    margin-bottom: 1px;
+    gap: 25px;
+  }
+}
+
+.selected-items__card {
+  display: flex;
+  gap: 12px;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 700;
+
+  @media (min-width: @desktop-width) {
+    gap: 20px;
+  }
+}
+
+.selected-items__item {
+  padding-bottom: 15px;
+  border-bottom: 1px solid @basic-grey-light;
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 24px;
+  }
+}
+
+.selected-items__item:last-of-type {
+  @media (min-width: @desktop-width) {
+    border-bottom: none;
+  }
+}
+
+.selected-items__description {
+  display: grid;
+  padding-top: 1px;
+  grid-template-columns: 107px 73px;
+  grid-template-rows: 1fr 34px;
+  gap: 16px;
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: min-content minmax(76px, min-content) 40px;
+    padding-right: 35px;
+    gap: 0;
+  }
+}
+
+.selected-items__image {
+  display: block;
+}
+
+.selected-items__text {
+  display: none;
+  margin: 0;
+  font-weight: 400;
+  color: @basic-grey;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    grid-row: 2/3;
+    line-height: 19px;
+    margin-bottom: 19px;
+  }
+}
+
+.selected-items__name {
+  margin: 0;
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 10px;
+    font-size: 20px;
+    line-height: 23px;
+  }
+}
+
+.selected-items__price {
+  margin: 0;
+  justify-self: end;
+
+  @media (min-width: @desktop-width) {
+    font-size: 20px;
+    line-height: 23px;
+  }
+}
+
+.selected-items__delete {
+  padding: 0;
+  color: @basic-grey;
+  text-decoration: underline;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 400;
+  justify-self: end;
+  align-self: end;
+
+  @media (min-width: @desktop-width) {
+    grid-column: 2/3;
+    grid-row: 3/4;
+    font-size: 14px;
+    line-height: 16px;
+  }
+}

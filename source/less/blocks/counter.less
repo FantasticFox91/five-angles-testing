@@ -1,0 +1,81 @@
+.counter {
+  position: relative;
+  max-width: 81px;
+  display: flex;
+  border: 1px solid @basic-black;
+
+  @media (min-width: @desktop-width) {
+    grid-row: 3/4;
+    max-width: 114px;
+  }
+}
+
+.counter__button {
+  position: relative;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 34px;
+  border: none;
+  background-color: transparent;
+
+  &::after {
+    .pseudo();
+    top: calc(50% - 2px);
+    left: calc(50% - 7px);
+    width: 12px;
+    height: 2px;
+    background-color: @basic-black;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 40px;
+    width: 44px;
+
+    &::after {
+      width: 16px;
+    }
+  }
+}
+
+.counter__button--plus {
+  &::before {
+    .pseudo();
+    top: calc(50% - 7px);
+    left: calc(50% - 1px);
+    width: 2px;
+    height: 12px;
+    background-color: @basic-black;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-height: 40px;
+
+    &::before {
+      height: 16px;
+      top: calc(50% - 9px);
+      left: 50%;
+    }
+  }
+}
+
+.counter__input {
+  width: 25px;
+  padding-top: 2px;
+  padding-left: 8px;
+  max-height: 34px;
+  font: inherit;
+  border: none;
+
+  @media (min-width: @desktop-width) {
+    width: 27px;
+    max-height: 40px;
+    padding: 0;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+  }
+}

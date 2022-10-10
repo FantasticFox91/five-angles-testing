@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Drink2Go — интернет-магазин по продаже кофейных напитков">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/apple.png">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="fonts/Helvetica.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Helvetica-Bold.woff2" as="font" crossorigin="anonymous">
+    <title>5 Углов</title>
+  </head>
+  <body>
+    <h1 class="visually-hidden">Интернет-магазин по продаже товаров.</h1>
+  <!-- Header block -->
+    <header class="header">
+      <div class="container header__container">
+        <div class="header__top">
+          <button class="header__button burger-button" type="button">
+            <span class="visually-hidden">
+              Открыть/скрыть бургер меню
+            </span>
+          </button>
+          <div class="search">
+            <button class="search__button" type="button">
+              <span class="visually-hidden">Открыть поиск</span>
+              <svg class="search__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.7778 20.5555C16.1779 20.5555 20.5555 16.1779 20.5555 10.7778C20.5555 5.37765 16.1779 1 10.7778 1C5.37765 1 1 5.37765 1 10.7778C1 16.1779 5.37765 20.5555 10.7778 20.5555Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M22.9998 22.9999L17.6831 17.6833" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <input class="search__input" type="search" placeholder="Поиск">
+          </div>
+          <div class="user-iteractions">
+            <button class="user-iteractions__button user-iteractions__button--profile">
+              <span class="visually-hidden">Профиль</span>
+              <svg width="24" height="27" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M23 26V23.2222C23 21.7488 22.4205 20.3357 21.3891 19.2939C20.3576 18.252 18.9587 17.6667 17.5 17.6667H6.5C5.04131 17.6667 3.64236 18.252 2.61091 19.2939C1.57946 20.3357 1 21.7488 1 23.2222V26" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M12 12.1111C15.0376 12.1111 17.5 9.6238 17.5 6.55556C17.5 3.48731 15.0376 1 12 1C8.96243 1 6.5 3.48731 6.5 6.55556C6.5 9.6238 8.96243 12.1111 12 12.1111Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <button class="user-iteractions__button">
+              <span class="visually-hidden">Избранное</span>
+              <svg class="user-iteractions__icon user-iteractions__icon--heart" width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M23.1494 2.94496C22.5629 2.32835 21.8667 1.83921 21.1003 1.50549C20.334 1.17177 19.5126 1 18.6831 1C17.8535 1 17.0321 1.17177 16.2658 1.50549C15.4994 1.83921 14.8032 2.32835 14.2167 2.94496L12.9997 4.22404L11.7826 2.94496C10.5981 1.70004 8.99152 1.00065 7.31633 1.00065C5.64114 1.00065 4.03455 1.70004 2.85001 2.94496C1.66547 4.18988 1 5.87836 1 7.63895C1 9.39954 1.66547 11.088 2.85001 12.3329L4.06705 13.612L12.9997 23L21.9323 13.612L23.1494 12.3329C23.7361 11.7166 24.2015 10.9849 24.519 10.1794C24.8366 9.37403 25 8.51076 25 7.63895C25 6.76714 24.8366 5.90387 24.519 5.09846C24.2015 4.29305 23.7361 3.56128 23.1494 2.94496V2.94496Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <button class="user-iteractions__button user-iteractions__button--cart">
+              <span class="visually-hidden">Корзина</span>
+              <svg class="user-iteractions__icon user-iteractions__icon--cart" width="22" height="24" viewBox="0 0 22 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4.33333 1L1 5.4V20.8C1 21.3835 1.23413 21.9431 1.65087 22.3556C2.06762 22.7682 2.63285 23 3.22222 23H18.7778C19.3671 23 19.9324 22.7682 20.3491 22.3556C20.7659 21.9431 21 21.3835 21 20.8V5.4L17.6667 1H4.33333Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M1 5.39996H21" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M15.4448 9.79993C15.4448 10.9669 14.9765 12.086 14.1431 12.9112C13.3096 13.7364 12.1791 14.1999 11.0004 14.1999C9.82161 14.1999 8.69115 13.7364 7.85766 12.9112C7.02416 12.086 6.55591 10.9669 6.55591 9.79993" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <div class="user-iteractions__counter">
+                <span class="user-iteractions__number">4</span>
+              </div>
+            </button>
+          </div>
+        </div>
+        <div class="header__middle">
+          <nav class="header__nav navigation">
+            <ul class="navigation__list">
+              <li class="navigatiion__item">
+                <a class="navigation__link" href="#">Страница 1</a>
+              </li>
+              <li class="navigatiion__item">
+                <a class="navigation__link" href="#">Страница 2</a>
+              </li>
+              <li class="navigatiion__item">
+                <a class="navigation__link" href="#">Страница 3</a>
+              </li>
+            </ul>
+            <div class="logo">
+              <a href="#" class="logo__link">
+                <svg class="logo__image" width="77" height="24" viewBox="0 0 77 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0 23.7647V0.235293H3.48497V21.3782H12.4208V23.7647H0Z" fill="black"/>
+                  <path d="M19.2529 5.91597C19.2529 4.10084 19.8337 2.66667 20.9954 1.61344C22.1868 0.537815 23.9889 0 26.4015 0C28.8142 0 30.6163 0.537815 31.8077 1.61344C32.9992 2.66667 33.5949 4.10084 33.5949 5.91597V18.084C33.5949 19.8768 32.9992 21.3109 31.8077 22.3866C30.6163 23.4622 28.8142 24 26.4015 24C23.9889 24 22.1868 23.4622 20.9954 22.3866C19.8337 21.3109 19.2529 19.8768 19.2529 18.084V5.91597ZM22.6932 18.2185C22.6932 19.2941 22.991 20.1345 23.5868 20.7395C24.2123 21.3221 25.1505 21.6134 26.4015 21.6134C27.6823 21.6134 28.6206 21.3221 29.2163 20.7395C29.8121 20.1345 30.1099 19.2941 30.1099 18.2185V5.78151C30.1099 4.70588 29.8121 3.87675 29.2163 3.29412C28.6206 2.68907 27.6823 2.38655 26.4015 2.38655C25.1505 2.38655 24.2123 2.68907 23.5868 3.29412C22.991 3.87675 22.6932 4.70588 22.6932 5.78151V18.2185Z" fill="black"/>
+                  <path d="M48.101 0C50.5136 0 52.2859 0.537815 53.4178 1.61344C54.5794 2.68908 55.1603 4.12325 55.1603 5.91597V7.93277H51.854V5.78151C51.854 4.70588 51.5561 3.87675 50.9604 3.29412C50.3945 2.68907 49.4711 2.38655 48.1903 2.38655C46.9393 2.38655 46.0159 2.68907 45.4202 3.29412C44.8245 3.87675 44.5266 4.70588 44.5266 5.78151V18.2185C44.5266 19.2941 44.8245 20.1345 45.4202 20.7395C46.0159 21.3221 46.9393 21.6134 48.1903 21.6134C49.4711 21.6134 50.3945 21.3221 50.9604 20.7395C51.5561 20.1345 51.854 19.2941 51.854 18.2185V13.5126H48.6371V11.1597H55.1603V18.084C55.1603 19.8768 54.5794 21.3109 53.4178 22.3866C52.2859 23.4622 50.5136 24 48.101 24C45.7181 24 43.9458 23.4622 42.7841 22.3866C41.6523 21.3109 41.0863 19.8768 41.0863 18.084V5.91597C41.0863 5.01961 41.2204 4.21288 41.4884 3.4958C41.7863 2.7563 42.2182 2.12885 42.7841 1.61344C43.3799 1.09804 44.1096 0.705882 44.9734 0.436975C45.867 0.145658 46.9095 0 48.101 0Z" fill="black"/>
+                  <path d="M62.658 5.91597C62.658 4.10084 63.2388 2.66667 64.4005 1.61344C65.5919 0.537815 67.394 0 69.8066 0C72.2193 0 74.0214 0.537815 75.2128 1.61344C76.4043 2.66667 77 4.10084 77 5.91597V18.084C77 19.8768 76.4043 21.3109 75.2128 22.3866C74.0214 23.4622 72.2193 24 69.8066 24C67.394 24 65.5919 23.4622 64.4005 22.3866C63.2388 21.3109 62.658 19.8768 62.658 18.084V5.91597ZM66.0983 18.2185C66.0983 19.2941 66.3961 20.1345 66.9919 20.7395C67.6174 21.3221 68.5556 21.6134 69.8066 21.6134C71.0875 21.6134 72.0257 21.3221 72.6214 20.7395C73.2172 20.1345 73.515 19.2941 73.515 18.2185V5.78151C73.515 4.70588 73.2172 3.87675 72.6214 3.29412C72.0257 2.68907 71.0875 2.38655 69.8066 2.38655C68.5556 2.38655 67.6174 2.68907 66.9919 3.29412C66.3961 3.87675 66.0983 4.70588 66.0983 5.78151V18.2185Z" fill="black"/>
+                </svg>
+              </a>
+            </div>
+            <ul class="navigation__list">
+              <li class="navigatiion__item">
+                <a class="navigation__link" href="#">Страница 4</a>
+              </li>
+              <li class="navigatiion__item">
+                <a class="navigation__link" href="#">Страница 5</a>
+              </li>
+              <li class="navigatiion__item">
+                <a class="navigation__link" href="#">Страница 6</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header__bottom">
+          <div class="breadcrumbs">
+            <ul class="breadcrumbs__list">
+              <li class="breadcrumbs__item">
+                <a href="#" class="breadcrumbs__link">Главная</a>
+              </li>
+              <li class="breadcrumbs__item">
+                <a href="#" class="breadcrumbs__link breadcrumbs__link--active">Корзина</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+<!-- Main block -->
+    <main class="main">
+      <h1 class="visually-hidden">Оформление заказа онлайн магазина "Название магазина"</h1>
+      <div class="container">
+        <section class="cart">
+          <form action="#" method="post" class="cart__form form">
+            <h2 class="cart__heaading">Корзина</h2>
+            <div class="user">
+              <p class="user__text">
+                Есть аккаунт?
+                <a class="user__link" href="#">Войти</a>
+              </p>
+            </div>
+            <fieldset class="form__fieldset form__fieldset--textarea">
+              <textarea class="form__input form__input--textarea" id="adress" name="adress" type="text" placeholder="Ваш Адрес">г. Санкт-Петербург, пр. Просвещения, д. 99, кв. 152</textarea>
+              <label class="form__label" for="adress">Адрес</label>
+            </fieldset>
+            <div class="map">
+              <picture>
+                <source media="(min-width: 1120px)" type="image/webp" srcset="img/map-desktop.webp, img/map-desktop@2x.webp 2x" width="150" height="150">
+                <source type="image/webp" srcset="img/map-mobile.webp, img/map-mobile2x.webp 2x">
+
+                <source media="(min-width: 1120px)" srcset="img/map-desktop.png, img/map-desktop@2x.jpg 2x">
+                <img class="map__image" src="img/map-mobile.png" srcset="img/map-mobile@2x.png 2x" alt="Карта" width="287" height="200">
+              </picture>
+            </div>
+            <div class="form__columns">
+              <fieldset class="form__fieldset">
+                <input class="form__input" id="name" name="name" type="text" placeholder="Ваше Имя">
+                <label class="form__label" for="adress">Ваше Имя</label>
+              </fieldset>
+              <fieldset class="form__fieldset">
+                <input class="form__input" id="phone-number" name="phone-number" type="tel" placeholder="Ваш Телефон">
+                <label class="form__label" for="adress">Ваш Телефон</label>
+              </fieldset>
+            </div>
+            <fieldset class="form__fieldset">
+              <input class="form__input" id="email" name="email" type="mail" placeholder="Ваш Email">
+              <label class="form__label" for="email">Ваш Email</label>
+            </fieldset>
+            <fieldset class="form__fieldset">
+              <div class="select">
+                <div class="select__arrow">
+                  <input class="select__input form__input" type="text" placeholder="Тип упаковки" readonly>
+                </div>
+                <ul class="select__list">
+                  <li class="select__item">
+                    Пункт 1
+                  </li>
+                  <li class="select__item">
+                    Пункт 2
+                  </li>
+                  <li class="select__item">
+                    Пункт 3
+                  </li>
+                  <li class="select__item">
+                    Пункт 4
+                  </li>
+                  <li class="select__item">
+                    Пункт 5
+                  </li>
+                </ul>
+              </div>
+            </fieldset>
+            <fieldset class="form__fieldset">
+              <input class="form__input" name="comment" type="text" placeholder="Введите комментарий">
+            </fieldset>
+            <div class="selected-items">
+              <h3 class="selected-items__heading">Выбранные товары:</h3>
+              <ul class="selected-items__list">
+                <li class="selected-items__item">
+                  <div class="selected-items__card">
+                    <picture>
+                      <source media="(min-width: 1120px)" type="image/webp" srcset="img/item-desktop.webp, img/item-desktop@2x.webp 2x" width="150" height="150">
+                      <source type="image/webp" srcset="img/item-mobile.webp, img/item-mobile@2x.webp 2x" width="80" height="80">
+
+                      <source media="(min-width: 1120px)" srcset="img/item-desktop.png, img/item-desktop@2x.jpg 2x" width="150" height="150">
+                      <img class="selected-items__image" src="img/item-mobile.png" srcset="img/item-mobile@2x.png 2x" alt="Название товара" width="80" height="80">
+                    </picture>
+                    <div class="selected-items__description">
+                      <p class="selected-items__name">Товар 1</p>
+                      <p class="selected-items__text">Описание товара, которое может быть длинным</p>
+                      <p class="selected-items__price">1090 руб.</p>
+                      <div class="counter">
+                        <button class="counter__button counter__button--minus" type="button">
+                          <span class="visually-hidden">
+                            Уменьшить количество
+                          </span>
+                        </button>
+                        <input class="counter__input" type="number" value="1">
+                        <button class="counter__button counter__button--plus" type="button">
+                          <span class="visually-hidden">
+                            Увеличить количество
+                          </span>
+                        </button>
+                      </div>
+                      <a href="#" class="selected-items__delete">Удалить</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="selected-items__item">
+                  <div class="selected-items__card">
+                    <picture>
+                      <source media="(min-width: 1120px)" type="image/webp" srcset="img/item-desktop.webp, img/item-desktop@2x.webp 2x" width="150" height="150">
+                      <source type="image/webp" srcset="img/item-mobile.webp, img/item-mobile@2x.webp 2x" width="80" height="80">
+
+                      <source media="(min-width: 1120px)" srcset="img/item-desktop.png, img/item-desktop@2x.jpg 2x" width="150" height="150">
+                      <img class="selected-items__image" src="img/item-mobile.png" srcset="img/item-mobile@2x.png 2x" alt="Название товара" width="80" height="80">
+                    </picture>
+                    <div class="selected-items__description">
+                      <p class="selected-items__name">Товар 2</p>
+                      <p class="selected-items__text">Описание товара, которое может быть очень-очень длинным</p>
+                      <p class="selected-items__price">700 руб.</p>
+                      <div class="counter">
+                        <button class="counter__button counter__button--minus" type="button">
+                          <span class="visually-hidden">
+                            Уменьшить количество
+                          </span>
+                        </button>
+                        <input class="counter__input" type="number" value="1">
+                        <button class="counter__button counter__button--plus" type="button">
+                          <span class="visually-hidden">
+                            Увеличить количество
+                          </span>
+                        </button>
+                      </div>
+                      <a href="#" class="selected-items__delete">Удалить</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="selected-items__item">
+                  <div class="selected-items__card">
+                    <picture>
+                      <source media="(min-width: 1120px)" type="image/webp" srcset="img/item-desktop.webp, img/item-desktop@2x.webp 2x" width="150" height="150">
+                      <source type="image/webp" srcset="img/item-mobile.webp, img/item-mobile@2x.webp 2x" width="80" height="80">
+
+                      <source media="(min-width: 1120px)" srcset="img/item-desktop.png, img/item-desktop@2x.jpg 2x" width="150" height="150">
+                      <img class="selected-items__image" src="img/item-mobile.png" srcset="img/item-mobile@2x.png 2x" alt="Название товара" width="80" height="80">
+                    </picture>
+                    <div class="selected-items__description">
+                      <p class="selected-items__name">Товар 3</p>
+                      <p class="selected-items__text">Короткое описание товара</p>
+                      <p class="selected-items__price">2000 руб.</p>
+                      <div class="counter">
+                        <button class="counter__button counter__button--minus" type="button">
+                          <span class="visually-hidden">
+                            Уменьшить количество
+                          </span>
+                        </button>
+                        <input class="counter__input" type="number" value="2">
+                        <button class="counter__button counter__button--plus" type="button">
+                          <span class="visually-hidden">
+                            Увеличить количество
+                          </span>
+                        </button>
+                      </div>
+                      <a href="#" class="selected-items__delete">Удалить</a>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="selected-items__totals totals">
+              <p class="totals__text">Итог:</p>
+              <p class="totals__sum">3790 руб.</p>
+            </div>
+            <button class="form__button" type="submit">Купить</button>
+          </form>
+        </section>
+    </main>
+<!-- Footer block -->
+    <footer class="footer">
+      <div class="footer__container">
+      </div>
+    </footer>
+    <script src="js/index.js"></script>
+  </body>
+</html>

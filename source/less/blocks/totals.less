@@ -1,0 +1,29 @@
+.totals {
+  display: flex;
+  margin-bottom: 24px;
+  font-size: 26px;
+  line-height: 30px;
+  font-weight: 700;
+  justify-content: space-between;
+
+  @media (min-width: @desktop-width) {
+    margin-top: 126px;
+    margin-bottom: 0;
+    padding: 45px 30px;
+    grid-row: 8/9;
+    grid-column: 2/3;
+    align-self: start;
+    font-size: 40px;
+    line-height: 46px;
+    color: @basic-white;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+}
+
+.totals__text {
+  margin: 0;
+}
+
+.totals__sum {
+  margin: 0;
+}

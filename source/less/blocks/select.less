@@ -1,0 +1,54 @@
+.select {
+  position: relative;
+}
+
+.select__arrow {
+  position: relative;
+
+  &::after,
+  &::before {
+    .pseudo();
+
+    top: calc(50% + 7px);
+    right: 0;
+    width: 10px;
+    height: 1px;
+    background-color: @basic-black;
+  }
+
+  &::after {
+    right: 12px;
+    transform: rotate(45deg);
+  }
+
+  &::before {
+    right: 6px;
+    transform: rotate(-45deg);
+  }
+}
+
+.select__list {
+  display: none;
+  position: absolute;
+  bottom: -201px;
+  width: 100%;
+  padding: 20px;
+  background-color: @basic-white;
+  z-index: 2;
+  border: 1px solid @basic-grey;
+  border-radius: 0 0 5px 5px;
+}
+
+.select__item {
+  color: @basic-grey;
+  cursor: pointer;
+
+  &:hover {
+    color: @basic-black;
+  }
+}
+
+.select__item:not(:last-child) {
+  margin-bottom: 19px;
+}
+
