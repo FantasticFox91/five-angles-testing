@@ -427,6 +427,15 @@ button {
   border-bottom: 1px solid #9f9f9f;
   cursor: pointer;
 }
+.form__input:invalid {
+  border-color: #d80909;
+}
+.form__input:invalid::-moz-placeholder {
+  color: #d80909;
+}
+.form__input:invalid::placeholder {
+  color: #d80909;
+}
 .form__input--textarea {
   resize: none;
   line-height: 19px;
@@ -514,13 +523,16 @@ button {
 .select__list {
   display: none;
   position: absolute;
-  bottom: -201px;
+  bottom: -139px;
   width: 100%;
   padding: 20px;
   background-color: #ffffff;
   z-index: 2;
   border: 1px solid #9f9f9f;
   border-radius: 0 0 5px 5px;
+}
+.select--open .select__list {
+  display: block;
 }
 .select__item {
   color: #9f9f9f;
@@ -572,11 +584,6 @@ button {
   font-size: 16px;
   line-height: 18px;
   font-weight: 700;
-  transition: all 0.4s cubic-bezier(0.1, 0.82, 0.76, 0.96);
-  cursor: pointer;
-}
-.selected-items__card:hover {
-  transform: scale(1.05);
 }
 @media (min-width: 1200px) {
   .selected-items__card {
@@ -661,7 +668,7 @@ button {
   transition: all 0.4s cubic-bezier(0.1, 0.82, 0.76, 0.96);
 }
 .selected-items__delete:hover {
-  color: #d80909;
+  color: #000000;
 }
 @media (min-width: 1200px) {
   .selected-items__delete {
