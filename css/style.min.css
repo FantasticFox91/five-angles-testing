@@ -470,9 +470,13 @@ button {
 }
 .map {
   margin-bottom: 21px;
+  width: 287px;
+  height: 200px;
 }
 @media (min-width: 1200px) {
   .map {
+    width: 555px;
+    height: 700px;
     grid-column: 2 / 3;
     grid-row: 1 / 10;
   }
@@ -766,6 +770,7 @@ button {
     line-height: 46px;
     color: #ffffff;
     background-color: rgba(0, 0, 0, 0.8);
+    z-index: 2;
   }
 }
 .totals__text {
