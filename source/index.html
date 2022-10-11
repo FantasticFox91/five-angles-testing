@@ -124,7 +124,7 @@
               </p>
             </div>
             <fieldset class="form__fieldset form__fieldset--textarea">
-              <textarea class="form__input form__input--textarea" id="adress" name="adress" type="text" placeholder="Ваш Адрес">г. Санкт-Петербург, пр. Просвещения, д. 99, кв. 152</textarea>
+              <textarea class="form__input form__input--textarea" id="adress" name="adress" type="text" placeholder="Ваш Адрес" required>г. Санкт-Петербург, пр. Просвещения, д. 99, кв. 152</textarea>
               <label class="form__label" for="adress">Адрес</label>
             </fieldset>
             <div class="map" id="map">
@@ -138,38 +138,32 @@
             </div>
             <div class="form__columns">
               <fieldset class="form__fieldset">
-                <input class="form__input" id="name" name="name" type="text" placeholder="Ваше Имя">
+                <input class="form__input" id="name" name="name" type="text" placeholder="Ваше Имя" required>
                 <label class="form__label" for="adress">Ваше Имя</label>
               </fieldset>
               <fieldset class="form__fieldset">
-                <input class="form__input" id="phone-number" name="phone-number" type="tel" placeholder="Ваш Телефон">
+                <input class="form__input" id="phone-number" name="phone-number" type="tel" placeholder="Ваш Телефон" required>
                 <label class="form__label" for="adress">Ваш Телефон</label>
               </fieldset>
             </div>
             <fieldset class="form__fieldset">
-              <input class="form__input" id="email" name="email" type="mail" placeholder="Ваш Email">
+              <input class="form__input" id="email" name="email" type="mail" placeholder="Ваш Email" required>
               <label class="form__label" for="email">Ваш Email</label>
             </fieldset>
             <fieldset class="form__fieldset">
               <div class="select">
                 <div class="select__arrow">
-                  <input class="select__input form__input" type="text" placeholder="Тип упаковки" readonly>
+                  <input class="select__input form__input" type="text" placeholder="Тип упаковки" required readonly>
                 </div>
                 <ul class="select__list">
                   <li class="select__item">
-                    Пункт 1
+                    Без упаковки
                   </li>
                   <li class="select__item">
-                    Пункт 2
+                    Стандартная
                   </li>
                   <li class="select__item">
-                    Пункт 3
-                  </li>
-                  <li class="select__item">
-                    Пункт 4
-                  </li>
-                  <li class="select__item">
-                    Пункт 5
+                    Подарочная
                   </li>
                 </ul>
               </div>
@@ -192,7 +186,7 @@
                     <div class="selected-items__description">
                       <p class="selected-items__name">Товар 1</p>
                       <p class="selected-items__text">Описание товара, которое может быть длинным</p>
-                      <p class="selected-items__price">1090 руб.</p>
+                      <p class="selected-items__price" ><span class="selected-items__num" data-price="1090">1090</span> руб.</p>
                       <div class="counter">
                         <button class="counter__button counter__button--minus" type="button">
                           <span class="visually-hidden">
@@ -222,7 +216,7 @@
                     <div class="selected-items__description">
                       <p class="selected-items__name">Товар 2</p>
                       <p class="selected-items__text">Описание товара, которое может быть очень-очень длинным</p>
-                      <p class="selected-items__price">700 руб.</p>
+                      <p class="selected-items__price" ><span class="selected-items__num" data-price="700">700</span> руб.</p>
                       <div class="counter">
                         <button class="counter__button counter__button--minus" type="button">
                           <span class="visually-hidden">
@@ -252,7 +246,7 @@
                     <div class="selected-items__description">
                       <p class="selected-items__name">Товар 3</p>
                       <p class="selected-items__text">Короткое описание товара</p>
-                      <p class="selected-items__price">2000 руб.</p>
+                      <p class="selected-items__price"><span class="selected-items__num" data-price="1000">2000</span> руб.</p>
                       <div class="counter">
                         <button class="counter__button counter__button--minus" type="button">
                           <span class="visually-hidden">
@@ -274,7 +268,7 @@
             </div>
             <div class="selected-items__totals totals">
               <p class="totals__text">Итог:</p>
-              <p class="totals__sum">3790 руб.</p>
+              <p class="totals__sum"><span class="totals__price">3790</span> руб.</p>
             </div>
             <button class="form__button" type="submit">Купить</button>
           </form>
@@ -285,7 +279,7 @@
       <div class="footer__container">
       </div>
     </footer>
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=f4064449-aed6-4597-84cc-a7cd5c3d5651&lang=ru_RU" type="text/javascript"> </script>
+    <!-- <script src="https://api-maps.yandex.ru/2.1/?apikey=f4064449-aed6-4597-84cc-a7cd5c3d5651&lang=ru_RU" type="text/javascript"> </script> -->
     <script src="js/index.js" type="module"></script>
   </body>
 </html>

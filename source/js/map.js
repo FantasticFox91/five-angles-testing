@@ -1,10 +1,9 @@
 const map = document.querySelector('#map');
 const adressInput = document.querySelector('.form__input--textarea');
 let myMap;
-
 function init(){
   myMap = new ymaps.Map(map, {
-      center: [55.76, 37.64],
+      center: [60.033326, 30.428682],
       zoom: 10,
   });
 }

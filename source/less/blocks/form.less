@@ -45,6 +45,15 @@
   cursor: pointer;
 }
 
+.form__input:invalid {
+
+  border-color: @error-red;
+
+  &::placeholder {
+    color: @error-red;
+  }
+}
+
 .form__input--textarea {
   resize: none;
   line-height: 19px;
