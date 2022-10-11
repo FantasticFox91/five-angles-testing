@@ -160,6 +160,13 @@ button {
   justify-content: center;
   border: none;
   background-color: transparent;
+  cursor: pointer;
+}
+.search__button .search__icon {
+  transition: all 0.4s cubic-bezier(0.1, 0.82, 0.76, 0.96);
+}
+.search__button:hover .search__icon {
+  transform: scale(1.2);
 }
 @media (min-width: 1200px) {
   .search__button {
@@ -185,6 +192,12 @@ button {
   justify-content: center;
   border: none;
   background-color: transparent;
+}
+.user-iteractions__button svg {
+  transition: all 0.4s cubic-bezier(0.1, 0.82, 0.76, 0.96);
+}
+.user-iteractions__button:hover svg {
+  transform: scale(1.2);
 }
 @media (min-width: 1200px) {
   .user-iteractions__button {
@@ -264,12 +277,20 @@ button {
   color: #9f9f9f;
   font-weight: 700;
   letter-spacing: 0.09em;
+  transition: all 0.4s cubic-bezier(0.1, 0.82, 0.76, 0.96);
+}
+.navigation__link:hover {
+  color: #000000;
 }
 .logo {
   margin-top: -25px;
   margin-bottom: 37px;
   display: flex;
   justify-content: center;
+  transition: all 0.4s cubic-bezier(0.1, 0.82, 0.76, 0.96);
+}
+.logo:hover {
+  transform: scale(1.2);
 }
 @media (min-width: 1200px) {
   .logo {
@@ -305,6 +326,12 @@ button {
   font-size: 18px;
   text-decoration: none;
   color: #9f9f9f;
+}
+.breadcrumbs__link[href] {
+  transition: all 0.4s cubic-bezier(0.1, 0.82, 0.76, 0.96);
+}
+.breadcrumbs__link[href]:hover {
+  color: #000000;
 }
 .breadcrumbs__link--active {
   color: #000000;
@@ -349,6 +376,10 @@ button {
 }
 .user__link {
   color: #9f9f9f;
+  transition: all 0.4s cubic-bezier(0.1, 0.82, 0.76, 0.96);
+}
+.user__link:hover {
+  color: #000000;
 }
 .form {
   padding-bottom: 40px;
@@ -419,6 +450,11 @@ button {
   font-weight: 700;
   border: 1px solid #000000;
   background-color: transparent;
+  transition: all 0.4s cubic-bezier(0.1, 0.82, 0.76, 0.96);
+}
+.form__button:hover {
+  background-color: #000000;
+  color: #ffffff;
 }
 @media (min-width: 1200px) {
   .form__button {
@@ -532,6 +568,11 @@ button {
   font-size: 16px;
   line-height: 18px;
   font-weight: 700;
+  transition: all 0.4s cubic-bezier(0.1, 0.82, 0.76, 0.96);
+  cursor: pointer;
+}
+.selected-items__card:hover {
+  transform: scale(1.05);
 }
 @media (min-width: 1200px) {
   .selected-items__card {
@@ -613,6 +654,10 @@ button {
   font-weight: 400;
   justify-self: end;
   align-self: end;
+  transition: all 0.4s cubic-bezier(0.1, 0.82, 0.76, 0.96);
+}
+.selected-items__delete:hover {
+  color: #d80909;
 }
 @media (min-width: 1200px) {
   .selected-items__delete {
