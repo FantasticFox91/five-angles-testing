@@ -13,6 +13,14 @@
   border: none;
   background-color: transparent;
 
+  & svg {
+    transition: @basic-animation;
+  }
+
+  &:hover svg {
+    transform: scale(1.2);
+  }
+
   @media (min-width: @desktop-width) {
     margin-right: 22px;
   }

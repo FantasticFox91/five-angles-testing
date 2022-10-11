@@ -66,6 +66,12 @@
   font-weight: 700;
   border: 1px solid @basic-black;
   background-color: transparent;
+  transition: @basic-animation;
+
+  &:hover {
+    background-color: @basic-black;
+    color: @basic-white;
+  }
 
   @media (min-width: @desktop-width) {
     padding-top: 23px;

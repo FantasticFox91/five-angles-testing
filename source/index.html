@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Drink2Go — интернет-магазин по продаже кофейных напитков">
+    <meta name="description" content="Агентсво '5 улов'">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/apple.png">
@@ -24,14 +24,14 @@
             </span>
           </button>
           <div class="search">
-            <button class="search__button" type="button">
+            <label for="search" class="search__button">
               <span class="visually-hidden">Открыть поиск</span>
               <svg class="search__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M10.7778 20.5555C16.1779 20.5555 20.5555 16.1779 20.5555 10.7778C20.5555 5.37765 16.1779 1 10.7778 1C5.37765 1 1 5.37765 1 10.7778C1 16.1779 5.37765 20.5555 10.7778 20.5555Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                 <path d="M22.9998 22.9999L17.6831 17.6833" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
-            </button>
-            <input class="search__input" type="search" placeholder="Поиск">
+            </label>
+            <input class="search__input" type="search" id="search" placeholder="Поиск">
           </div>
           <div class="user-iteractions">
             <button class="user-iteractions__button user-iteractions__button--profile">
@@ -103,7 +103,7 @@
                 <a href="#" class="breadcrumbs__link">Главная</a>
               </li>
               <li class="breadcrumbs__item">
-                <a href="#" class="breadcrumbs__link breadcrumbs__link--active">Корзина</a>
+                <a class="breadcrumbs__link breadcrumbs__link--active">Корзина</a>
               </li>
             </ul>
           </div>
