@@ -127,9 +127,9 @@
               <textarea class="form__input form__input--textarea" id="adress" name="adress" type="text" placeholder="Ваш Адрес">г. Санкт-Петербург, пр. Просвещения, д. 99, кв. 152</textarea>
               <label class="form__label" for="adress">Адрес</label>
             </fieldset>
-            <div class="map">
+            <div class="map" id="map">
               <picture>
-                <source media="(min-width: 1120px)" type="image/webp" srcset="img/map-desktop.webp, img/map-desktop@2x.webp 2x" width="150" height="150">
+                <source media="(min-width: 1120px)" type="image/webp" srcset="img/map-desktop.webp, img/map-desktop@2x.webp 2x">
                 <source type="image/webp" srcset="img/map-mobile.webp, img/map-mobile2x.webp 2x">
 
                 <source media="(min-width: 1120px)" srcset="img/map-desktop.png, img/map-desktop@2x.jpg 2x">
@@ -285,6 +285,7 @@
       <div class="footer__container">
       </div>
     </footer>
-    <script src="js/index.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=f4064449-aed6-4597-84cc-a7cd5c3d5651&lang=ru_RU" type="text/javascript"> </script>
+    <script src="js/index.js" type="module"></script>
   </body>
 </html>
